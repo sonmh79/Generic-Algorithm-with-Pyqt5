@@ -13,7 +13,8 @@
 - 결과 그래프로 보여주기
 - 그래프에 Toolbar 추가
 
-## 화면
+## 상세 화면
+<img width="600" alt="스크린샷 2021-11-22 오후 4 54 06" src="https://user-images.githubusercontent.com/78152114/142823602-e8201bab-af70-4576-b16b-63fe62493443.png">
 
 
 
