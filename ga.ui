@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1177</width>
+    <height>814</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="distanceTable">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>341</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_openDistance">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>161</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Distance Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_reset">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>410</y>
+      <width>81</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RESET</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_distanceData">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Distance Data :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_distanceData">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>450</y>
+      <width>391</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_demandData">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>480</y>
+      <width>391</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_demandData">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Demand Data :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_openDemand">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>410</y>
+      <width>161</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Demand Data</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="demandTable">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>171</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_run">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>410</y>
+      <width>81</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RUN</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>411</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Variables</string>
+    </property>
+    <widget class="QPushButton" name="btn_update">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>81</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_capa">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Capacity :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_el">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_resRobots">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>190</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> -</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_chromo">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_mp">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mutation Prob :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_robots">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Robots :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_resCapa">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> -</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_chromo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chromosomes :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_mp">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_resEl">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>150</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> -</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_el">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Evolution Limit :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_resMp">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> -</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_capa">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_resChromo">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> -</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_robots">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>599</x>
+      <y>29</y>
+      <width>561</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1177</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
