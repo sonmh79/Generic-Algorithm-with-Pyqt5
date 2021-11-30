@@ -1,4 +1,4 @@
-# Generic-Algorithm-with-Pyqt5
+# Genetic-Algorithm-with-Pyqt5
 
 * 유전 알고리즘을 이용해 VRP 최적해 구하기
 * Input: Distance Data (노드들 간 거리 데이터), Demand Data (각 노드 별 수요) - excel files 및 각종 변수들
